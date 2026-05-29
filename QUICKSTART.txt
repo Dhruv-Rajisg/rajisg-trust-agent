@@ -1,22 +1,16 @@
-RAJISG TRUST AGENT — HACKATHON DEMO (local only)
+RAJISG TRUST AGENT — quick start
 
-1. Get Gemini API key: https://aistudio.google.com/apikey
+1. Gemini API key: https://aistudio.google.com/apikey
 
-2. Run from repo root:
-   powershell -ExecutionPolicy Bypass -File agent\run.ps1
+2. Clone repo, then:
+   powershell -ExecutionPolicy Bypass -File run.ps1
 
-3. First run creates .venv-agent and rpca_compliance_agent\.env if missing.
+3. First run creates .venv and rpca_compliance_agent\.env
    Put your key in .env: GOOGLE_API_KEY="..."
 
-4. Browser: http://localhost:8765 — pick rpca_compliance_agent.
-   (If port blocked, set RPCA_ADK_PORT=8899 before run.ps1)
+4. Open http://localhost:8765 → rpca_compliance_agent
 
-5. Demo chat (change path if needed):
-   Validate this file for EU and India and export evidence:
-   C:\Backup-bp-cloudrun-hsm-session-20260421\local-preview\conformance-screenshots\T2I_Puppy.png
+5. Demo (use any local image path):
+   Validate for EU and India and export evidence: C:\path\to\your\file.jpg
 
-SIGN + CREDENTIAL CARD (your real product — separate, already live):
-   https://contentauthenticity.rajisg.com/generate  (sign)
-   https://contentauthenticity.rajisg.com/validate (verify)
-
-Hackathon agent = chat helper only. Does not expose signer keys.
+Live validator (read-only): https://contentauthenticity.rajisg.com/validate
