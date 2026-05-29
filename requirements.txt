@@ -1,0 +1,3 @@
+# RajISG Trust Agent — hackathon / local demo
+google-adk>=1.34.0
+requests>=2.32.0
